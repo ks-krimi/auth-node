@@ -27,7 +27,7 @@ app.use(
 )
 
 app.route('/').get((req, res) => {
-  res.status(200).json({ message: 'works' })
+  res.status(200).json({ message: 'it works' })
 })
 
 app.listen(APP_PORT, () =>

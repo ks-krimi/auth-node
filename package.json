@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "up": "mkdir -p data && docker-compose up -d",
+    "stop": "docker-compose stop",
+    "down": "docker-compose down",
     "start": "node -r esm .",
     "dev": "nodemon -r esm"
   },

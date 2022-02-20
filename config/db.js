@@ -1,6 +1,6 @@
 const {
   MONGO_HOST = 'localhost',
-  MONGO_PORT = 27017,
+  MONGO_PORT = 27018,
   MONGO_DATABASE = 'auth'
 } = process.env
 
