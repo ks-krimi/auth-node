@@ -5,6 +5,7 @@ import { register } from './routes'
 
 export const createApp = (store) => {
   const app = express()
+  app.disable('x-powered-by')
 
   app.use(express.json())
   app.use(session({ ...SESSION_OPTIONS, store }))
