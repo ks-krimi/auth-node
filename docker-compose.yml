@@ -2,7 +2,6 @@ version: '3'
 
 services:
   db:
-    user: $UID
     image: mongo
     ports:
       - '27018:27017'

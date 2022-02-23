@@ -1,6 +1,6 @@
 import { NODE_ENV } from './app'
 
-const IS_IN_PROD = NODE_ENV !== 'production'
+const IS_IN_PROD = NODE_ENV === 'production'
 
 const {
   SESSION_SECRET = 'secret',
