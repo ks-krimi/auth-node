@@ -9,7 +9,8 @@
     "stop": "docker-compose stop",
     "down": "docker-compose down",
     "start": "node -r esm .",
-    "dev": "nodemon -r esm"
+    "dev": "nodemon -r esm",
+    "standard": "npx standard 'config/**/*.js' 'src/**/*.js' 'index.js' --fix"
   },
   "keywords": [],
   "author": "",
