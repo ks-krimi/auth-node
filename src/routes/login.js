@@ -16,7 +16,7 @@ router.route('/login').post(guest, async (req, res, next) => {
       const check = await user.check(password)
       if (check) {
         logIn(req, user.id)
-        res.json(user)
+        res.status(200).json({ message: 'ok' })
       } else {
         throw new Unauthorized('Incorrect email or password')
       }
