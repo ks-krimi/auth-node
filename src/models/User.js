@@ -30,4 +30,8 @@ userSchema.method('check', async function (password) {
   return await compare(password, this.password)
 })
 
+userSchema.set('toJSON', {
+  transform: (doc, { __v, password, ...rest }, options) => rest
+})
+
 export const User = model('user', userSchema, 'users')
