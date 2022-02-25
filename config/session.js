@@ -3,7 +3,7 @@ import { IS_IN_PROD } from './app'
 const {
   SESSION_SECRET = 'secret',
   SESSION_NAME = 'sid',
-  SESSION_IDLE_TIMEOUT = 30000,
+  SESSION_IDLE_TIMEOUT = 60000,
   IN_PROD = IS_IN_PROD
 } = process.env
 

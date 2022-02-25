@@ -4,3 +4,10 @@ export class BadRequest extends Error {
     this.status = 400
   }
 }
+
+export class Unauthorized extends Error {
+  constructor (message = 'Unauthorized') {
+    super(message)
+    this.status = 401
+  }
+}

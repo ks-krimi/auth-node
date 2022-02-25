@@ -2,7 +2,7 @@ import express from 'express'
 import session from 'express-session'
 import { SESSION_OPTIONS } from '../config'
 import { notFound, serverError } from './middlewares'
-import { register } from './routes'
+import { login, register } from './routes'
 
 export const createApp = (store) => {
   const app = express()
@@ -11,6 +11,7 @@ export const createApp = (store) => {
   app.use(express.json())
   app.use(session({ ...SESSION_OPTIONS, store }))
   app.use(register)
+  app.use(login)
 
   app.use(notFound)
   app.use(serverError)
