@@ -2,6 +2,7 @@ import { SESSION_OPTIONS } from '../../config'
 
 export const logIn = (req, userId) => {
   req.session.userId = userId
+  req.session.createdAt = Date.now()
 }
 
 export const isLoggedIn = (req) => !!req.session.userId // return false if undefined
